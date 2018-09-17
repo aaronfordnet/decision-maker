@@ -1,21 +1,4 @@
-// Big Button
-.big-button {
-  background: $purple;
-  border: 0;
-  border-bottom: 0.6rem solid darken($purple, 10%);
-  color: white;
-  font-weight: bold;
-  font-size: $l-size;
-  margin-bottom: $xl-size;
-  padding: 2.4rem;
-  width: 100%;
-}
-
-.big-button:disabled {
-  opacity: 0.5;
-}
-
-// Button
+// Buttons
 .button {
   background: $purple;
   border: none;
@@ -30,4 +13,27 @@
   border: none;
   color: $off-white;
   padding: 0;
+}
+
+// Big Button
+.big-button {
+  background: $purple;
+  border: 0;
+  border-bottom: 0.6rem solid darken($purple, 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
 }
