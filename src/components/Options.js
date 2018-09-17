@@ -15,7 +15,7 @@ const Options = (props) => (
     {
       props.optionsList.length === 0 &&
       <p className="widget__message">
-        Please enter some options
+        Please add an option to get started!
       </p>
     }
     {
