@@ -1,9 +1,16 @@
-// Widget
+// Widget Container
 .widget {
   background: $light-blue;
+  margin-bottom: $xl-size;
 }
 
-
+.widget__message {
+  border-bottom: 1px solid lighten($light-blue, 10%);
+  color: $off-white;
+  margin: none;
+  padding: $l-size;
+  text-align: center;
+}
 
 // Widget Header
 .widget-header {

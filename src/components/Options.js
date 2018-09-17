@@ -12,18 +12,22 @@ const Options = (props) => (
         Remove All
       </button>
     </div>
-    {props.optionsList.length === 0 && <p>Please enter some options</p>}
-    <ul>
-      {
-        props.optionsList.map(opt => (
-          <Option
-            key={opt}
-            optionText={opt}
-            handleRemoveOption={props.handleRemoveOption}
-          />
-        ))
-      }
-    </ul>
+    {
+      props.optionsList.length === 0 &&
+      <p className="widget__message">
+        Please enter some options
+      </p>
+    }
+    {
+      props.optionsList.map((option, index) => (
+        <Option
+          key={option}
+          optionText={option}
+          count={index + 1}
+          handleRemoveOption={props.handleRemoveOption}
+        />
+      ))
+    }
   </div>
 );
 
